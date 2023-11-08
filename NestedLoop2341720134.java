@@ -13,13 +13,19 @@ public class NestedLoop2341720134 {
             } 
             System.out.println(); 
            } 
-
+        double total = 0;
+        int count = 0;   
         for (int i = 0; i < array.length; i++) { 
             System.out.print("Kota ke-" + (i + 1) + ": "); 
             for (int j = 0; j < array[0].length; j++) { 
             System.out.print(array[i][j] + " "); 
+            total += array[i][j];
+            count++;
             } 
             System.out.println(); 
         }
+        double average = total / count;
+        System.out.println("Rata rata suhu :" + average);
+
     } 
 }
